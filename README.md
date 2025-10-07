@@ -58,4 +58,15 @@ CodeLLDB
 
   Necessário se o senhor quiser depurar (debug) código Rust dentro do VS Code.
 
+tokio
+
+  cargo add tokio --features full
+  
+(ta dando erro, o antivirus nao deixa passar, classifica como comportamento generico de trojan)
+  rustup toolchain install stable-x86_64-pc-windows-gnu
+  rustup default stable-x86_64-pc-windows-gnu
+  cargo clean
+  cargo run
+
+
 
