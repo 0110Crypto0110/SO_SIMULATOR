@@ -61,12 +61,19 @@ CodeLLDB
 tokio
 
   cargo add tokio --features full
-  
+
+=======================================================================
+ANOTAÇÕES
+=======================================================================
+ ainda nao consgui testar, mas tem o basico do funcionar e trabalharmos em cima dele;
+ pedi a base pro chat; agora vou tentar estudar a sintaxe, para ver se entendo melhor.
+ 
 (ta dando erro, o antivirus nao deixa passar, classifica como comportamento generico de trojan)
+
   rustup toolchain install stable-x86_64-pc-windows-gnu
   rustup default stable-x86_64-pc-windows-gnu
   cargo clean
-  cargo run
+  cargo run ( o erro aparece aqui, da nao permitido);
 
 
 
