@@ -23,3 +23,26 @@ pub async fn usar_recurso(nome: &str, duracao: u64) {
 pub async fn pausa(segundos: u64) {
     sleep(Duration::from_secs(segundos)).await;
 }
+
+pub struct Sincronizacao {
+    sem: Arc<Semaphore>,
+}
+
+impl Sincronizacao {
+    pub fn novo(n: usize) -> Self {
+        Self { sem: Arc::new(Semaphore::new(n)) }
+    }
+
+    pub fn executar<F, Fut>(&self, f: F) -> tokio::task::JoinHandle<()>
+    where
+        F: FnOnce() -> Fut + Send + 'static,
+        Fut: std::future::Future<Output = ()> + Send + 'static,
+    {
+        let sem = self.sem.clone();
+        tokio::spawn(async move {
+            let _permit = sem.acquire_owned().await.unwrap();
+            f().await;
+        })
+    }
+}
+
