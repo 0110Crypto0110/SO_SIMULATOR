@@ -1,4 +1,4 @@
-Perfeito. Aqui está o README completo, em **um único bloco**, pronto para copiar e colar no GitHub:
+
 
 ````markdown
 # 🏥 SO_SIMULATOR
@@ -145,8 +145,5 @@ Em `tests.rs`:
 const ESCALA_TEMPO: f64 = 5.0; // 1s real = 5s simulados
 ```
 
-```
-
-Se quiser, posso criar **uma versão ainda mais visual**, com cores e ícones em títulos e comandos destacados, que fica bem bonito no GitHub.  
 
 
