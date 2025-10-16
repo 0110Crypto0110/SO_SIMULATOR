@@ -149,5 +149,4 @@ const ESCALA_TEMPO: f64 = 5.0; // 1s real = 5s simulados
 
 Se quiser, posso criar **uma versão ainda mais visual**, com cores e ícones em títulos e comandos destacados, que fica bem bonito no GitHub.  
 
-Quer que eu faça isso também?
-```
+
