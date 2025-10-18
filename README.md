@@ -97,3 +97,4 @@ cargo add tokio --features full
 
 ##falta implementar a representacao e talvez as listas dos outros recursos alem de medicos;
 ##falta completar a mecanica de prioridade;
+##algum erro na logica ta fazedo um, paciente pegar dois recursos do mesmo.
