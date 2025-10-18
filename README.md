@@ -93,57 +93,7 @@ cargo add tokio --features full
 ## 🔹 Anotações
 
 =======================================================================
+##indireitei a logica para o funcionamento ficar como ela pediu no docs;
 
-* Ainda não consegui testar completamente, mas já tem o básico funcionando.
-* Pedi a base pro ChatGPT; agora vou estudar a sintaxe para entender melhor.
-* Alguns antivírus podem bloquear a execução por comportamento genérico de trojan.
-
-Comandos adicionais para resolver problemas:
-
-```bash
-rustup toolchain install stable-x86_64-pc-windows-gnu
-rustup default stable-x86_64-pc-windows-gnu
-cargo clean
-cargo run  # se aparecer erro de permissão
-```
-
-*(Resolvi instalando o toolkit do VS Code)*
-
----
-
-## 🔹 Rodar testes automatizados
-
-=======================================================================
-
-```bash
-cargo test
-```
-
----
-
-## 🔹 Notas importantes
-
-=======================================================================
-
-A **escala** é um multiplicador de tempo e fica no arquivo `paciente.rs`:
-
-| Valor | Descrição                                             |
-| ----- | ----------------------------------------------------- |
-| 1.0   | tempo real                                            |
-| 5.0   | 5x mais lento (visualização de deadlocks e progresso) |
-
-No `main.rs`:
-
-```rust
-let escala = 1.0; // 1.0 = tempo real, >1.0 = mais lento para visualizar GUI
-```
-
-Em `tests.rs`:
-
-```rust
-// Fator de escala de tempo para visualização na GUI
-const ESCALA_TEMPO: f64 = 5.0; // 1s real = 5s simulados
-```
-
-
-
+##falta implementar a representacao e talvez as listas dos outros recursos alem de medicos;
+##falta completar a mecanica de prioridade;
